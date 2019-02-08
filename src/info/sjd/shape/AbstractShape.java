@@ -1,5 +1,5 @@
 package info.sjd.shape;
 
-public abstract class AbstractShape {
+public abstract class AbstractShape implements Shape {
 	 
 }

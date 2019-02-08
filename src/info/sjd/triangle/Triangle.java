@@ -2,32 +2,30 @@ package info.sjd.triangle;
 
 import info.sjd.shape.*;
 
-public class Triangle extends AbstractShape implements Shape  {
-	private int h;
-	private int a;
-	private double S;
+public class Triangle extends AbstractShape  {
+	private int height;
+	private int side;
 	
-	public Triangle(int h, int a) {
-		this.h = h;
-		this.a = a;
+	public Triangle(int height, int side) {
+		this.height = height;
+		this.side = side;
 	}
 	
-	public void setH(int h) {
-		this.h = h;
+	public void setHeight(int height) {
+		this.height = height;
+	}
+	public int getHeight() {
+		return height;
 	}
 	
-	public void setA(int a){
-		this.a = a;
+	public void setSide(int side){
+		this.side = side;
 	}
-
-	public double getS() {
-		return S;  
+	public int getSide() {
+		return side;
 	}
-	
-	public void getArea() {
-		S =  (h * a) / 2;	
+	@Override
+	public double getArea() {
+		return  (height * side) / 2;	
 	}
-	
-	
-	
 }

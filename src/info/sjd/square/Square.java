@@ -2,23 +2,22 @@ package info.sjd.square;
 
 import info.sjd.shape.*;
 
-public class Square extends AbstractShape implements Shape{
+public class Square extends AbstractShape{
 
-	private int a;
-	private int S;
+	private int side;
 	
-	public Square(int a){ 
-		this.a = a;
+	public Square(int side){ 
+		this.side = side;
 	}
 	
-	public int getS() {
-		return S; 
+	public void setSide(int side) {
+		this.side = side;
 	}
-	public void setA(int a) {
-		this.a = a;
+	public int getSide() {
+		return side;
 	}
 	@Override
-	public void getArea() {
-		S = a * a;
+	public double getArea() {
+		return side * side;
 	}
 }

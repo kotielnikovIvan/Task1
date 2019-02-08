@@ -2,23 +2,22 @@ package info.sjd.circle;
 
 import info.sjd.shape.*;
 
-public class Circle extends AbstractShape implements Shape{
+public class Circle extends AbstractShape{
 
 	private int radius;
-	private double S;
 	
 	public Circle (int radius) {
 		this.radius = radius; 
 	}
 	
-	public double getS() {
-		return S;
-	}
 	public void setRadius(int radius) {
 		this.radius = radius;
 	}
-	
-	public void getArea() {
-		S = Math.PI * Math.pow(radius, 2);
+	public double getRadius() {
+		return radius;
+	}
+	@Override
+	public double getArea() {
+		return Math.PI * Math.pow(radius, 2);
 	}
 }
