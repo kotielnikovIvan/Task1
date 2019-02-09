@@ -1,4 +1,4 @@
-package circle;
+ package info.sjd.circle;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -18,5 +18,5 @@ class CircleTest {
 		Circle circle = new Circle(10);
 		assertEquals(314.15926, circle.getArea(), 1.0);
 	}
- 
+  
 }

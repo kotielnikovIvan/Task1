@@ -1,4 +1,4 @@
-package square;
+package info.sjd.square;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -14,4 +14,4 @@ class SquareTest {
 		assertEquals(16.0, square.getArea(), 1.0);
 	} 
 
-}
+} 

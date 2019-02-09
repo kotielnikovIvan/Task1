@@ -18,6 +18,6 @@ public class ApplicationRunner {
         logger.info("circle with radius " + circle.getRadius() + " is " + circle.getArea());
         logger.info("Square with side " + square.getSide() + " is " + square.getArea());
         logger.info("Triangle with side " + triangle.getSide() + " and height " + triangle.getHeight() + " is " + triangle.getArea());
-	}
-
+	} 
+  
 } 
