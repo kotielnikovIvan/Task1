@@ -11,7 +11,7 @@ public class Circle extends AbstractShape{
 	}
 	 
 	public void setRadius(int radius) {
-		this.radius = radius;
+		this.radius = radius; 
 	} 
 	public double getRadius() {
 		return radius;
